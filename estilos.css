@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main-content {
+    display: flex;
+}
+
+#game-area {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    height: 500px;
+    position: relative;
+    width: 500px;
+    margin-right: 20px; 
+    transition: filter 0.3s;
+}
+
+.personaje {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+#player {
+    background-image: url('img/beyonce.webp');
+    background-size: cover;
+}
+
+#beyonce {
+    background-color: blue;
+}
+
+#game-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+#configarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    background-color: #007bff;
+    color: #fff;
+}

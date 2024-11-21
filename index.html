@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escapa de Beyonce</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Escapa de Beyonce</h1>
+    <div id="main-content">
+        <div id="game-area">
+            <div id="player" class="personaje"></div>
+            <div id="beyonce" class="personaje"></div>
+            <div id="game-message">Presiona Iniciar</div>
+            <div id="timer" class="hidden">Tiempo: <span id="time-remaining">30</span>s</div>
+        </div>
+        <div id="configarea">
+            <div>
+                <h2>Modo de Juego</h2>
+                <button id="timed-mode">Contra Tiempo</button>
+                <button id="chase-mode">Sin limite</button>
+            </div>
+            <div>
+                <h2>Dificultad</h2>
+                <button id="noob">Noob</button>
+                <button id="normal">Normal</button>
+                <button id="dark-souls">Dark Souls</button>
+            </div>
+            <div>
+                <h2>Personalizar</h2>
+                <label for="color-picker">Color del Jugador:</label>
+                <input type="color" id="color-picker" value="#0000ff">
+            </div>
+            <div>
+                <button id="start-button">Iniciar</button>
+                <button id="stop-button">Detener</button>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="sounds/04-Radiohead-WeirdFishes_arpeggi.mp3"></audio>
+    <script src="app.js"></script>
+</body>
+</html>
